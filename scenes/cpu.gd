@@ -19,6 +19,7 @@ func _process(delta: float) -> void:
 		move_by = get_parent().PADDLE_SPEED * delta * (dist / abs(dist))
 	else:
 		move_by = dist
+		#test
 	
 	position.y -= move_by
 	
