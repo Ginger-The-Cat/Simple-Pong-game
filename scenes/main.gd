@@ -10,7 +10,7 @@ func _on_ball_timer_timeout() -> void:
 #player score
 func _on_score_right_body_entered(body: Node2D) -> void:
 	score[0] += 1
-	$HUD/PlayerScore.text = str(score[1])
+	$HUD/PlayerScore.text = str(score[0])
 	$BallTimer.start()
 #cpu score
 func _on_score_left_body_entered(body: Node2D) -> void:
