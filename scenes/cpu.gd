@@ -10,7 +10,6 @@ var p_height : int
 func _ready() -> void:
 	win_height = get_viewport_rect().size.y
 	p_height = $ColorRect.get_size().y
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	ball_pos = $"../Ball".position
@@ -19,7 +18,6 @@ func _process(delta: float) -> void:
 		move_by = get_parent().PADDLE_SPEED * delta * (dist / abs(dist))
 	else:
 		move_by = dist
-		#test
 	
 	position.y -= move_by
 	
